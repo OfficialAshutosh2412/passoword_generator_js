@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f25f5f;
+}
+section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+}
+section h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.rangeBox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.caseBox,
+.charBox,
+.outputBox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.outputBox input {
+  font-size: 1.5rem;
+  background: #ff0f57;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+}
+.outputBox button {
+  background: #ff0f57;
+  border: none;
+  padding: 18px 30px;
+  height: 100%;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+}
+.rangeBox label,
+.caseBox label,
+.charBox label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.rangeBox p {
+  font-size: 1.2rem;
+}
+.rangeBox input {
+  width: 50%;
+}
+.rangeBox {
+  background: #e9e9e9;
+  padding: 20px;
+  border-radius: 5px;
+  accent-color: #ff0f57;
+}
+.caseBox div,
+.charBox div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  background: #e9e9e9;
+  padding: 20px;
+  border-radius: 5px;
+}
+.rangeBox,
+.caseBox {
+  margin-bottom: 10px;
+}
+
+.caseBox input[type="checkbox"],
+.charBox input[type="checkbox"] {
+  -webkit-appearance: none; /* Remove default styling */
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff0f57; /* Default border color */
+  cursor: pointer;
+  border-radius: 50%;
+}
+.caseBox input[type="checkbox"]:checked,
+.charBox input[type="checkbox"]:checked {
+  border-color: #ff0f57; /* Change border color when checked */
+  background-color: #ff0f57; /* Optional: background color */
+}
