@@ -10,10 +10,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f25f5f;
+  background: #0f192a;
 }
 section {
-  background: #ffffff;
+  background: #e9e9e9;
   padding: 30px;
   border-radius: 10px;
 }
@@ -38,15 +38,16 @@ section h1 {
   justify-content: start;
   align-items: center;
   gap: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .outputBox input {
-  font-size: 1.5rem;
+  font-size: 2rem;
   background: #ff0f57;
   color: white;
   border: none;
   border-radius: 7px;
   padding: 10px;
+  transition: background 0.5s ease;
 }
 .outputBox button {
   background: #ff0f57;
@@ -57,6 +58,7 @@ section h1 {
   font-size: 1.2rem;
   color: rgb(255, 255, 255);
   text-transform: capitalize;
+  transition: 0.2s all ease;
 }
 .rangeBox label,
 .caseBox label,
@@ -72,7 +74,7 @@ section h1 {
   width: 50%;
 }
 .rangeBox {
-  background: #e9e9e9;
+  background: #f3f3f3;
   padding: 20px;
   border-radius: 5px;
   accent-color: #ff0f57;
@@ -84,7 +86,7 @@ section h1 {
   align-items: center;
   gap: 5px;
   width: 100%;
-  background: #e9e9e9;
+  background: #f3f3f3;
   padding: 20px;
   border-radius: 5px;
 }
@@ -108,4 +110,37 @@ section h1 {
 .charBox input[type="checkbox"]:checked {
   border-color: #ff0f57; /* Change border color when checked */
   background-color: #ff0f57; /* Optional: background color */
+}
+.generate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.generate button {
+  background-color: #ff0f57;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s all ease;
+}
+#copyBtn {
+  cursor: pointer;
+}
+.highlight {
+  background: #3347dc !important;
+  transition: 0.5s background ease-in-out;
+}
+#copyBtn:active,
+.generate button:active {
+  background-color: #d30c48;
+  transform: scale(0.9);
+}
+.copied {
+  background: rgb(16, 122, 16) !important;
+  transition: 0.5s background ease-in-out;
 }
